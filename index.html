@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +25,7 @@
       text-align: center;
       background: #ff8aab;
       color: #fff;
+
     }
     .btn_first {
       width: 132px;
@@ -47,11 +48,13 @@
     .top-banner-text {
       /* max-width: 66.6667rem; */
       /* margin: 0 auto; */
+      white-space: nowrap;
     }
 
 
     .chocoTime_sect {
     }
+    .brand_sect{position: relative;z-index: 1;}
   </style>
   <body>
     <main class="">
@@ -60,7 +63,7 @@
         <button type="button" class="btn_first">선착순</button>
         <div class="top-banner-text">
           초코 회원이라면 <span class="highlight">누구나 무료! </span> 지금 신청
-          <span class="arrow"><img src="./assets/images/arrow.svg" alt="" /></span>
+          <!-- <span class="arrow"><img src="./assets/images/arrow.svg" alt="" /></span> -->
         </div>
       </div>
       <section class="intro_sect">
@@ -202,6 +205,18 @@
 
             <button type="submit" class="form-submit">지원하기</button>
           </form>
+          <img
+            src="./assets/images/sec02.png"
+            alt=""
+            style="
+        position: absolute;
+        top: auto;
+        top: 0;
+        opacity: 0.5;
+        left: 0;
+        z-index: -1;
+    "
+          />
         </div>
       </section>
       <!-- 비디오 -->
@@ -215,9 +230,19 @@
             <button class="video-card__btn" type="button" aria-label="영상 재생">▶</button>
           </div>
         </div>
+        <img
+          class=""
+          src="./assets/images/videoBg.png"
+          alt=""
+          style="position: absolute;
+        top: 0;
+        opacity: 0.5;
+        left: 0;
+        z-index: -1;"
+        />
       </section>
       <!-- 교과목 -->
-      <section>
+      <section class="subject_sect">
         <div class="tab-box-wrap">
           <div class="tab-menu_wrap">
             <ul class="">
@@ -237,6 +262,7 @@
             </ul>
           </div>
         </div>
+        <img src="./assets/images/subjectBg.png" alt="" />
       </section>
       <!-- 초코타임 -->
       <section class="chocoTime_sect"></section>

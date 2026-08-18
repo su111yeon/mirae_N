@@ -95,6 +95,7 @@ header {
 /* brand_sect */
 .brand_sect {
   padding-top: 20.55vw;
+  padding-top: 15.6%;
   padding-bottom: 128px;
   background: #b0eeaf;
 }
@@ -106,7 +107,7 @@ header {
   /* height: 45.278rem; */
   /* margin-bottom: 30px; */
   /* margin-bottom: 1.67rem; */
-  background: url(../images/holidday2.png);
+  /* background: url(../images/holidday2.png); */
   background-position: 100%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -121,6 +122,7 @@ header {
   text-align: center;
   width: 77.5vw;
   margin: 0 auto;
+  width: 58%;
 }
 .bubble-wrap {
   position: relative;
@@ -139,9 +141,7 @@ header {
   font-size: 0;
   opacity: 0;
   transform: translateY(25px) scale(0.9);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .bubble.show {
   opacity: 1;
