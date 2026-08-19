@@ -41,7 +41,6 @@ body {
 .video_sect {
   background: #fdd7e3;
 }
-
 .inner {
   width: 100%;
   max-width: var(--content-width);
@@ -99,8 +98,6 @@ body {
 }
 .intro_sect .sect_inner {
   position: relative;
-  width: 100%;
-  max-width: 1200px;
   aspect-ratio: 1200 / 922;
 }
 .intro_heading {
@@ -213,9 +210,7 @@ header {
   font-size: 0;
   opacity: 0;
   transform: translateY(25px) scale(0.9);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .bubble.show {
   opacity: 1;
@@ -351,6 +346,9 @@ form {
 @media (max-width: 1199.98px) {
   html {
     font-size: 16px;
+  }
+  .sect_inner {
+    width: 94%;
   }
 }
 /* input[type="checkbox"] {
@@ -589,17 +587,48 @@ video {
 
 .subject_sect {
   padding-top: 5.22vw;
-  background-image: url(../images/subjectBg.png);
+  background-image: url(../images/subBg.png);
+  background-image: url(../images/subBg2.png);
   background-size: 100% auto;
+  padding-bottom: 7.84vw;
+  position: relative;
+  /* background: url(../images/graphic.png) no-repeat 50% 100%; */
+  /* background: url(../images/top.png) no-repeat 50% 100%; */
+  /* background: url(../images/sec_introBg.png) no-repeat 50% 100%; */
+  background-size: 100% auto;
+  background-size: 100% auto;
+  aspect-ratio: 1200 / 980;
+  padding-top: 40px;
+  padding-top: 2.05%;
+  padding-top: 4%;
+  padding-bottom: 2vw;
+  height: 100%;
 }
 .subject-heading {
-  width: 63%;
+  width: 63.5%;
   text-align: center;
   margin: 0 auto 5%;
 }
 .tab-box-wrap {
+  /* position: relative;
+  width: 74.5vw;
+  max-width: 1126px;
+  max-height: 595px;
+  height: 39.6vw;
+  aspect-ratio: 1126 / 595;
+  background: url(../images/newspaper_bg.png);
+  background-position: center center;
+  background-size: contain;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-image: url(../images/subject_box.png); */
 }
-.tab-menu-wrap {
+.tab-menu_wrap {
+  margin: 0 auto;
+  text-align: center;
+  width: 63%;
+  gap: 0 2rem;
+  display: flex;
 }
 .tab-content_wrap {
   width: 90%;
