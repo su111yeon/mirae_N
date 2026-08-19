@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,54 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-  <style>
-    img {
-      /* width: 100%; */
-    }
-
-
-    .top-banner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 3.8887rem;
-      line-height: 3.8887rem;
-      font-size: 1.555rem;
-      font-family: "YeogiOttaeJalnan";
-      text-align: center;
-      background: #ff8aab;
-      color: #fff;
-
-    }
-    .btn_first {
-      width: 132px;
-      height: 42px;
-      margin-right: 20px;
-      /* align-self: center; */
-      font-size: 0;
-      line-height: 70px;
-      background: url(./assets/images/first_btn.svg) no-repeat 0 100%;
-      background-size: 100% 100%;
-    }
-    .highlight {
-      position: relative;
-      position: relative;
-      color: #fffe8d;
-      /* font-size: 2.53vw; */
-      background: url(./assets/images/top_underline.svg) no-repeat 0 100%;
-      margin: 0 0.5rem;
-    }
-    .top-banner-text {
-      /* max-width: 66.6667rem; */
-      /* margin: 0 auto; */
-      white-space: nowrap;
-    }
-
-
-    .chocoTime_sect {
-    }
-    .brand_sect{position: relative;z-index: 1;}
-  </style>
+  <style></style>
   <body>
     <main class="">
       <!--  -->
@@ -67,12 +20,19 @@
         </div>
       </div>
       <section class="intro_sect">
-        <section class="sect_inner"></section>
         <header>
           <h1 class="logo" target="_blank"><img src="./assets/images/logo.svg" alt="" /></h1>
           <button type="button" class="btn_login" target="_blank">로그인</button>
           <div class="ci" target="_blank"><img src="./assets/images/ci.svg" alt="" /></div>
         </header>
+        <section class="sect_inner">
+          <div class="intro_image">
+            <img src="./assets/images/main_title.png" alt="" />
+          </div>
+          <div class="intro_guide">
+            <img src="./assets/images/intro_guide.png" alt="" />
+          </div>
+        </section>
         <aside class="quick_menu">
           <a class="quick_link" href="#section01">계기교육 안내</a>
           <a class="quick_link" href="#">초코타임 미리보기</a>
@@ -111,52 +71,36 @@
                 <legend class="form-title">주로 사용하는 퍼블리싱 기술/환경을 선택해주세요. (복수선택 가능)</legend>
                 <ul class="form-options--chk">
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill01" />
-                      <label for="skill01">HTML5</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill01" />
+                    <label for="skill01">HTML5</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill02" />
-                      <label for="skill02">CSS</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill02" />
+                    <label for="skill02">CSS</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill03" />
-                      <label for="skill03">JavaScript</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill03" />
+                    <label for="skill03">JavaScript</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill04" />
-                      <label for="skill04">jQuery</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill04" />
+                    <label for="skill04">jQuery</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill05" />
-                      <label for="skill05">React</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill05" />
+                    <label for="skill05">React</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill06" />
-                      <label for="skill06">Vue</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill06" />
+                    <label for="skill06">Vue</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill07" />
-                      <label for="skill07">Figma</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill07" />
+                    <label for="skill07">Figma</label>
                   </li>
                   <li class="form-option">
-                    <span class="">
-                      <input type="checkbox" name="" value="1" id="skill08" />
-                      <label for="skill08">Phothoshop</label>
-                    </span>
+                    <input type="checkbox" name="" value="1" id="skill08" />
+                    <label for="skill08">Phothoshop</label>
                   </li>
                 </ul>
               </fieldset>
@@ -205,67 +149,60 @@
 
             <button type="submit" class="form-submit">지원하기</button>
           </form>
-          <img
-            src="./assets/images/sec02.png"
-            alt=""
-            style="
-        position: absolute;
-        top: auto;
-        top: 0;
-        opacity: 0.5;
-        left: 0;
-        z-index: -1;
-    "
-          />
+          <!-- <img src="./assets/images/sec02.png" alt="" style="position: absolute; top: auto; top: 0; opacity: 0.5; left: 0; z-index: -1" /> -->
         </div>
       </section>
       <!-- 비디오 -->
       <section class="video_sect">
         <div class="sect_inner">
-          <h2 class="video-heading"><img class="" src="./assets/images/video_tle.png" alt="" /></h2>
+          <h2 class="video-heading"><img class="" src="./assets/images/video_tle.png" alt="영상 섹션 타이틀" /></h2>
           <div class="video-card">
-            <!-- <img class="video-card__poster" src="./assets/images/video_thumb.png" alt="" /> -->
-            <img class="video-card__clip" src="clip.png" alt="" />
+            <img class="video-card__poster" src="./assets/images/video_thumb.png" alt="영상 썸네일" />
+            <video width="100%" controls="" muted="" autoplay loop="">
+              <source src="./assets/video/video.mp4" type="video/mp4" />
+            </video>
+            <img class="video-card__clip" src="./assets/images/clip.svg" alt="" />
+            <img class="" src="./assets/images/videoBox2.png" alt="" />
 
-            <button class="video-card__btn" type="button" aria-label="영상 재생">▶</button>
+            <button class="video-card__btn" type="button" aria-label="영상 재생 버튼">▶</button>
           </div>
         </div>
-        <img
-          class=""
-          src="./assets/images/videoBg.png"
-          alt=""
-          style="position: absolute;
-        top: 0;
-        opacity: 0.5;
-        left: 0;
-        z-index: -1;"
-        />
       </section>
       <!-- 교과목 -->
       <section class="subject_sect">
-        <div class="tab-box-wrap">
-          <div class="tab-menu_wrap">
-            <ul class="">
-              <li>국어</li>
-              <li>수학</li>
-              <li>사회</li>
-              <li>과학</li>
-            </ul>
-          </div>
-          <!-- 탭 콘텐츠 -->
-          <div class="tab-content_wrap swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">국어 콘텐츠</li>
-              <li class="swiper-slide">수학 콘텐츠</li>
-              <li class="swiper-slide">사회 콘텐츠</li>
-              <li class="swiper-slide">과학 콘텐츠</li>
-            </ul>
+        <div class="sect_inner">
+          <h2 class="subject-heading"><img class="" src="./assets/images/subject_tle.png" alt="영상 섹션 타이틀" /></h2>
+          <div class="tab-box-wrap">
+            <div class="tab-menu_wrap">
+              <ul class="">
+                <li>국어</li>
+                <li>수학</li>
+                <li>사회</li>
+                <li>과학</li>
+              </ul>
+            </div>
+            <div class="tab-content_wrap swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="./assets/images/subject01.png" alt="국어 콘텐츠" /></li>
+                <li class="swiper-slide"><img src="./assets/images/subject02.png" alt="수학 콘텐츠" /></li>
+                <li class="swiper-slide"><img src="./assets/images/subject03.png" alt="사회 콘텐츠" /></li>
+                <li class="swiper-slide"><img src="./assets/images/subject04.png" alt="과학 콘텐츠" /></li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <img src="./assets/images/subjectBg.png" alt="" />
       </section>
       <!-- 초코타임 -->
-      <section class="chocoTime_sect"></section>
+      <section class="chocoTime_sect">
+        <div class="sect_inner">
+          <img src="./assets/images/choco_content.png" alt="" />
+          <a class="chocoTime_btn" href="https://www.miraenchoco.com/choco-time" target="_blank">
+            <img src="./assets/images/btn_more.png" alt="" />
+          </a>
+        </div>
+      </section>
       <!-- NOTICE -->
       <section></section>
     </main>
@@ -298,6 +235,17 @@
         observer.observe(section);
       });
 
+      const videoCard = document.querySelector(".video-card");
+      const video = videoCard.querySelector(".video-card__video");
+      const poster = videoCard.querySelector(".video-card__poster");
+      const playBtn = videoCard.querySelector(".video-card__btn");
+
+      playBtn.addEventListener("click", () => {
+        poster.style.display = "none";
+        playBtn.style.display = "none";
+
+        video.play();
+      });
       // tab + swiper
       document.addEventListener("DOMContentLoaded", () => {
         const tabMenus = document.querySelectorAll(".tab-menu_wrap li");
@@ -336,6 +284,18 @@
             menu.classList.toggle("active", i === index);
           });
         }
+        /*
+        function setActiveTab(index) {
+          tabMenus.forEach((menu, i) => {
+            const img = menu.querySelector("img");
+            const isActive = i === index;
+
+            menu.classList.toggle("active", isActive);
+
+            img.src = isActive ? img.dataset.on : img.dataset.off;
+          });
+        }
+          */
       });
     </script>
   </body>
