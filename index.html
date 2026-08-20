@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -34,16 +34,18 @@
           </div>
         </section>
         <aside class="quick_menu">
-          <a class="quick_link" href="#section01">계기교육 안내</a>
-          <a class="quick_link" href="#">초코타임 미리보기</a>
-          <a class="quick_link" href="#">커리큘럼과목</a>
-          <a class="quick_link" href="#">산청하기</a>
-          <a class="quick_link" href="#">TOP</a>
+          <a class="quick_link" href="#sect01"
+            ><img src="" alt="" /><img class="" src="./assets/images/quick01_off.svg" alt="계기교육 안내"
+          /></a>
+          <a class="quick_link" href="#sect02"><img class="" src="./assets/images/quick02_off.svg" alt="초코타임 미리보기" /></a>
+          <a class="quick_link" href="#sect03"><img class="" src="./assets/images/quick03_off.svg" alt="커리큘럼과목" /></a>
+          <a class="quick_link" href="#sect04"><img class="" src="./assets/images/quick04_off.svg" alt="신청하기" /></a>
+          <a class="quick_link quick_link-top" href="#"><img class="" src="./assets/images/btn_top.svg" alt="TOP " /></a>
         </aside>
       </section>
       <!-- NEWS & FORM  -->
-      <section id="section01" class="brand_sect">
-        <div class="sect_inner">
+      <section class="brand_sect">
+        <div id="sect01" class="sect_inner">
           <section class="holiday-section">
             <h2 class="holiday-heading"><img class="" src="./assets/images/news_tle.png" alt="" /></h2>
             <div class="bubble-wrap">
@@ -153,7 +155,7 @@
         </div>
       </section>
       <!-- 비디오 -->
-      <section class="video_sect">
+      <section id="sect02" class="video_sect">
         <div class="sect_inner">
           <h2 class="video-heading"><img class="" src="./assets/images/video_tle.png" alt="영상 섹션 타이틀" /></h2>
           <div class="video-card">
@@ -169,7 +171,7 @@
         </div>
       </section>
       <!-- 교과목 -->
-      <section class="subject_sect">
+      <section id="sect03" class="subject_sect">
         <div class="sect_inner">
           <h2 class="subject-heading"><img class="" src="./assets/images/subject_tle.png" alt="영상 섹션 타이틀" /></h2>
           <div class="tab-box-wrap">
@@ -183,25 +185,42 @@
             </div> -->
             <div class="tab-menu_wrap">
               <ul class="">
-                <li><img src="./assets/images/sub_tab01_off.png" alt="" /></li>
-                <li><img src="./assets/images/sub_tab02_off.png" alt="" /></li>
-                <li><img src="./assets/images/sub_tab03_off.png" alt="" /></li>
-                <li><img src="./assets/images/sub_tab04_on.png" alt="" /></li>
+                <li>
+                  <img class="on" src="./assets/images/sub_tab01_on.png" alt="국어" />
+                  <img class="off" src="./assets/images/sub_tab01_off.png" alt="국어" />
+                </li>
+                <li>
+                  <img class="on" src="./assets/images/sub_tab02_on.png" alt="수학" />
+                  <img class="off" src="./assets/images/sub_tab02_off.png" alt="수학" />
+                </li>
+                <li>
+                  <img class="on" src="./assets/images/sub_tab03_on.png" alt="사회" />
+                  <img class="off" src="./assets/images/sub_tab03_off.png" alt="사회" />
+                </li>
+                <li>
+                  <img class="on" src="./assets/images/sub_tab04_on.png" alt="과학" />
+                  <img class="off" src="./assets/images/sub_tab04_off.png" alt="과학" />
+                </li>
               </ul>
+              <span class="tab_item rope01"><img src="./assets/images/Rope.svg" alt="" /></span>
+              <span class="tab_item rope02"><img src="./assets/images/Rope.svg" alt="" /></span>
             </div>
             <div class="tab-content_wrap swiper">
-              <ul class="swiper-wrapper">
+              <ul class="tab-content_list swiper-wrapper">
                 <li class="swiper-slide"><img src="./assets/images/subject01.png" alt="국어 콘텐츠" /></li>
                 <li class="swiper-slide"><img src="./assets/images/subject02.png" alt="수학 콘텐츠" /></li>
                 <li class="swiper-slide"><img src="./assets/images/subject03.png" alt="사회 콘텐츠" /></li>
                 <li class="swiper-slide"><img src="./assets/images/subject04.png" alt="과학 콘텐츠" /></li>
               </ul>
+              <img src="./assets/images/memoBox02.png" />
             </div>
+            <div class="swiper-prev"></div>
+            <div class="swiper-next"></div>
           </div>
         </div>
       </section>
       <!-- 초코타임 -->
-      <section class="chocoTime_sect">
+      <section id="sect04" class="chocoTime_sect">
         <div class="sect_inner">
           <img src="./assets/images/choco_content.png" alt="" />
           <a class="chocoTime_btn" href="https://www.miraenchoco.com/choco-time" target="_blank">
@@ -210,7 +229,11 @@
         </div>
       </section>
       <!-- NOTICE -->
-      <section></section>
+      <section class="notice_sect">
+        <div class="sect_inner">
+          <img src="./assets/images/notice.png" alt="notice " />
+        </div>
+      </section>
     </main>
 
     <script>
@@ -265,6 +288,12 @@
 
           // 최초 랜덤 슬라이드
           initialSlide: randomIndex,
+
+          // 이전 / 다음 버튼
+          navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+          },
 
           on: {
             init(swiper) {
