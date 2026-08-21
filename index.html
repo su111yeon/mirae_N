@@ -13,10 +13,14 @@
     <main class="">
       <!--  -->
       <div class="top-banner">
-        <button type="button" class="btn_first">선착순</button>
-        <div class="top-banner-text">
-          초코 회원이라면 <span class="highlight">누구나 무료! </span> 지금 신청
-          <!-- <span class="arrow"><img src="./assets/images/arrow.svg" alt="" /></span> -->
+        <div class="sect_inner">
+          <button type="button" class="btn_first">
+            <span class="icon_siren"><img src="./assets/images/icon_siren.svg" alt="" /></span>선착순
+          </button>
+          <div class="top-banner-text">
+            초코 회원이라면 <span class="highlight">누구나 무료! </span> 지금 신청
+            <!-- <span class="icon_siren"><img src="./assets/images/arrow.svg" alt="" /></span> -->
+          </div>
         </div>
       </div>
       <section class="intro_sect">
@@ -40,7 +44,7 @@
           <a class="quick_link" href="#sect02"><img class="" src="./assets/images/quick02_off.svg" alt="초코타임 미리보기" /></a>
           <a class="quick_link" href="#sect03"><img class="" src="./assets/images/quick03_off.svg" alt="커리큘럼과목" /></a>
           <a class="quick_link" href="#sect04"><img class="" src="./assets/images/quick04_off.svg" alt="신청하기" /></a>
-          <a class="quick_link quick_link-top" href="#"><img class="" src="./assets/images/btn_top.svg" alt="TOP " /></a>
+          <a class="quick_link quick_link-top" href="#"><img class="" src="./assets/images/quick_top.svg" alt="TOP " /></a>
         </aside>
       </section>
       <!-- NEWS & FORM  -->
@@ -331,6 +335,16 @@
           });
         }
           */
+      });
+      const topButton = document.querySelector(".quick_link-top");
+
+      topButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
     </script>
   </body>
